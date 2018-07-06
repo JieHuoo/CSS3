@@ -1,0 +1,57 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 140px;
+}
+
+#title {
+    position: relative;
+    margin-top: 100px;
+    height: 70px;
+    font: 32px bold;
+    text-align: center;
+    /*字体颜色的过渡*/
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+hr {
+    position: absolute;
+    bottom: 0;
+    /*最开始时下划线宽度为0，处于正中间*/
+    left: 50%;
+    width: 0;
+    height: 5px;
+    border: none;
+    background: blue;
+    /*下划线的过渡*/
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;  
+}
+
+button {
+    margin-top: 80px;
+    width: 150px;
+    height: 45px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 26px;
+    outline: none;
+    background: transparent;  
+}
+
+button:active {
+    /*点击按钮时出现的水波纹动画*/
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-animation: ripple .3s linear;
+    -moz-animation: ripple .3s linear;
+    -o-animation: ripple .3s linear;
+    animation: ripple .3s linear;
+}
