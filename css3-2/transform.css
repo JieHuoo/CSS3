@@ -21,6 +21,7 @@
     left: 0;
 }
 
+/*向左倾斜30度*/
 #box1 {
     position: absolute;
     left: 156px;
@@ -31,6 +32,7 @@
     transform: skewX(30deg);
 }
 
+/*压缩2倍*/
 #box2 {
     position: absolute;
     left: 312px;
@@ -41,6 +43,7 @@
     transform: scaleX(.5);
 }
 
+/*旋转45度*/
 #box3 {
     position: absolute;
     left: 468px;
@@ -51,6 +54,7 @@
     transform: rotate(45deg);
 }
 
+/*x轴位移10px，y轴位移20px*/
 #box4 {
     position: absolute;
     left: 624px;
@@ -61,6 +65,7 @@
     transform: translate(10px,20px);
 }
 
+/*同时包含上述属性*/
 #box5 {
     position: absolute;
     left: 774px;
