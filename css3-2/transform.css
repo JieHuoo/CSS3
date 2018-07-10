@@ -1,0 +1,77 @@
+.box-container {
+    position: absolute;
+    top: 200px;
+    left: 15%;
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+}
+
+.box {
+    width: 56px;
+    height: 64px;
+    border: 2px solid #ebebeb;
+    background-color: #f7f6f6;  
+    text-align: center;
+    line-height: 64px;
+}
+
+#box0 {
+    position: absolute;
+    left: 0;
+}
+
+#box1 {
+    position: absolute;
+    left: 156px;
+    -webkit-transform: skewX(30deg);
+    -moz-transform: skewX(30deg);
+    -ms-transform: skewX(30deg);
+    -o-transform: skewX(30deg);
+    transform: skewX(30deg);
+}
+
+#box2 {
+    position: absolute;
+    left: 312px;
+    -webkit-transform: scaleX(.5);
+    -moz-transform: scaleX(.5);
+    -ms-transform: scaleX(.5);
+    -o-transform: scaleX(.5);
+    transform: scaleX(.5);
+}
+
+#box3 {
+    position: absolute;
+    left: 468px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#box4 {
+    position: absolute;
+    left: 624px;
+    -webkit-transform: translate(10px,20px);
+    -moz-transform: translate(10px,20px);
+    -ms-transform: translate(10px,20px);
+    -o-transform: translate(10px,20px);
+    transform: translate(10px,20px);
+}
+
+#box5 {
+    position: absolute;
+    left: 774px;
+    -webkit-transform: skewX(30deg) scaleX(.5) rotate(45deg)
+                         translate(10px,20px) translate(10px,20px);
+    -moz-transform: skewX(30deg) scaleX(.5) rotate(45deg)
+                     translate(10px,20px) translate(10px,20px);
+    -ms-transform: skewX(30deg) scaleX(.5) rotate(45deg)
+                     translate(10px,20px) translate(10px,20px);
+    -o-transform: skewX(30deg) scaleX(.5) rotate(45deg)
+                 translate(10px,20px) translate(10px,20px);
+    transform: skewX(30deg) scaleX(.5) rotate(45deg)
+                 translate(10px,20px) translate(10px,20px);
+}
