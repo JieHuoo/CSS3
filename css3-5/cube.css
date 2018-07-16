@@ -9,6 +9,7 @@ body {
 }
 
 .cube {
+    /*视距*/
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     -ms-perspective: 800px;
@@ -21,11 +22,20 @@ body {
     margin-top: 150px;
     width: 300px;
     height: 300px;
+    /*呈现3d*/
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    /*立方体选择动画设定*/
+    -webkit-animation: move 10s linear infinite;
+    -moz-animation: move 10s linear infinite;
+    -ms-animation: move 10s linear infinite;
+    -o-animation: move 10s linear infinite;
+    animation: move 10s linear infinite;
+    /*动画停止*/
+    animation-play-state: paused;
 }
 
 .side {
@@ -86,12 +96,9 @@ body {
     transform: rotateY(90deg) translateZ(150px);
 }
 
+/* 鼠标移入时动画运行*/
 .container:hover {
-    -webkit-animation: move 10s linear infinite;
-    -moz-animation: move 10s linear infinite;
-    -ms-animation: move 10s linear infinite;
-    -o-animation: move 10s linear infinite;
-    animation: move 10s linear infinite;
+    animation-play-state: running;
 }
 
 @-webkit-keyframes move {
